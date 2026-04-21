@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - La Triada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="La Triada">
+    </div>
+
+    <h1>menú</h1>
+
+    <div class="acciones">
+        <button>Sesión</button>
+        <button>Idioma</button>
+        <button>SPEAKEAT</button>
+    </div>
+</header>
+
+<section class="filtros">
+    <span>Filtros:</span>
+    <button class="activo">Todos</button>
+    <button class="popular">Popular</button>
+    <button class="oferta">Oferta</button>
+</section>
+
+<nav class="categorias">
+    <a href="#">Todo</a>
+    <a href="#">Popular</a>
+    <a href="#">Platos Principales</a>
+    <a href="#">Postres</a>
+    <a href="#">Bebidas</a>
+</nav>
+
+<main class="menu-grid">
+
+    <!-- Tarjeta -->
+    <div class="card">
+        <span class="etiqueta rojo">Etiqueta</span>
+        <div class="contenido">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit culpa nobis ipsam est fugit rerum excepturi nihil soluta eum autem! Veniam animi fuga quibusdam sapiente tempore laudantium, pariatur odit mollitia!</p>
+            <span class="precio">$120</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="etiqueta rojo">Etiqueta</span>
+        <div class="contenido">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit culpa nobis ipsam est fugit rerum excepturi nihil soluta eum autem! Veniam animi fuga quibusdam sapiente tempore laudantium, pariatur odit mollitia!</p>
+            <span class="precio">$95</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="etiqueta verde">Etiqueta</span>
+        <div class="contenido">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit culpa nobis ipsam est fugit rerum excepturi nihil soluta eum autem! Veniam animi fuga quibusdam sapiente tempore laudantium, pariatur odit mollitia!</p>
+            <span class="precio">$150</span>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 La Triada. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
+
+
+* --- Estilos CSS, referencias --- * 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e6d9a8;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b08d57;
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.header h1 {
+    color: #ffcc70;
+    font-size: 40px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.acciones button {
+    display: block;
+    margin: 5px 0;
+    background-color: #4a2f1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* FILTROS */
+.filtros {
+    padding: 10px;
+}
+
+.filtros button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+.activo { background-color: #4caf50; color: white; }
+.popular { background-color: #e53935; color: white; }
+.oferta { background-color: #2e7d32; color: white; }
+
+/* CATEGORÍAS */
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* GRID */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* TARJETAS */
+.card {
+    background-color: #b08d57;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.rojo { background-color: #e53935; }
+.verde { background-color: #2e7d32; }
+
+.contenido {
+    position: absolute;
+    bottom: 0;
+    background: #eee;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+.precio {
+    float: right;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #b08d57;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
