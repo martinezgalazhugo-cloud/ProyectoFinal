@@ -1,0 +1,121 @@
+/* stylesSesion.css */
+/* Estilos para la página de inicio de sesión */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial;
+  min-height: 100vh;
+  background: #8B0000;
+  color: #ffffff;
+}
+
+/* Estilos del encabezado de la página */
+header {
+  text-align: center;
+  padding: 24px 16px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Ajuste del contenedor del formulario y la tarjeta blanca */
+#section-login {
+  width: 100%;
+  max-width: 420px;
+}
+
+.login-card {
+  background: #fff3c2;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  padding: 32px;
+}
+
+#section-login form {
+  display: grid;
+  gap: 18px;
+}
+
+#section-login label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #8B0000;
+}
+
+/* Estilo de los campos de entrada */
+#section-login input {
+  width: 90%;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  font-size: medium;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Enfoque visible para mejorar la accesibilidad */
+#section-login input:focus {
+  outline: none;
+  border-color: #5b8dff;
+  box-shadow: 0 0 0 4px rgba(91, 141, 255, 0.16);
+}
+
+/* Estilo del botón principal de inicio de sesión */
+.btn-login {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #8B0000;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* Hover y efecto visual al presionar */
+.btn-login:hover {
+  background: #c10000;
+}
+
+.btn-login:active {
+  transform: translateY(1px);
+}
+
+/* Texto con enlace para registrar una nueva cuenta */
+.account-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.account-text a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Estilo del enlace al pasar el ratón */
+.account-text a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 16px 32px;
+  font-size: 0.88rem;
+  color: #ffffff;
+}
