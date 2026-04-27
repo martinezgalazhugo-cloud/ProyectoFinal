@@ -109,7 +109,7 @@ button{
 .btn-back{
   position: fixed;
   bottom: 20px;
-  left: 20px;   /* 👈 aquí lo mandamos a la izquierda */
+  left: 20px;   
   background: #6a1523;
   color: white;
   padding: 12px 18px;

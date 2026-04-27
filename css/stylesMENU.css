@@ -1,0 +1,110 @@
+/* ===== GENERAL ===== */
+body{
+  margin:0;
+  font-family:'Roboto', sans-serif;
+  background:#fff3c2;
+  color:#5a1a1a;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#8B0000;
+  padding:5px 0;
+  border-radius:0 0 15px 15px;
+}
+
+.menu-title{
+  position: absolute;
+  left: 50%;
+  color:#f3c75f;
+  font-size:40px;
+  margin:0;
+  font-weight:bold;
+}
+
+header .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+/* ===== NAV ===== */
+.Opciones a{
+  background:#5a1a1a;
+  color:#fff;
+  padding:6px 10px;
+  border-radius:8px;
+  text-decoration:none;
+  margin-left:6px;
+  font-size:13px;
+}
+
+.Opciones a:hover{
+  background:#6a1523;
+}
+
+
+/* ===== SELECT ===== */
+select{
+  padding:4px;
+  border-radius:5px;
+  border:none;
+}
+
+/* ===== PLATILLOS ===== */
+.title{
+  text-align:center;
+  font-size:24px;
+  margin:5px 0;
+}
+
+.container-platillos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+
+/* tarjeta */
+.platillo{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+  transition:0.2s;
+}
+
+.platillo:hover{
+  transform:scale(1.02);
+}
+
+/* imagen */
+.img-platillo img{
+  border-radius:8px;
+}
+
+
+/* botón */
+.btn-detalles{
+  display:inline-block;
+  margin-top:4px;
+  padding:5px 8px;
+  background:#8B0000;
+  color:#fff3c2;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:11px;
+}
+
+.btn-detalles:hover{
+  background:#a3152a;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#8B0000;
+  color:#fff3c2;
+  text-align:center;
+  padding:50px;
+  margin-top:90px;
+  font-size:12px;
+}
