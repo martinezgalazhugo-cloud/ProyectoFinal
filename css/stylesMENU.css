@@ -89,6 +89,14 @@ header .container{
   border:none;
 }
 
+.label-idioma{
+  font-size:13px;
+  color:#f3c75f;
+  margin-left:900px;
+  right: 20px /* lo manda a la izquierda del select */
+  
+}
+
 
 /* =====================================================
    🟢 FILTROS
@@ -160,7 +168,7 @@ header .container{
 /* PARTE ROJA (arriba) */
 .img-platillo{
   background:#a00000;
-  height:140px;
+  height:180px;
   border-radius:20px 20px 0 0;
   position:relative;
 }
