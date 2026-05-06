@@ -1,110 +1,221 @@
-/* ===== GENERAL ===== */
+/* =====================================================
+   🔰 GENERAL (toda la página)
+===================================================== */
 body{
-  margin:0;
-  font-family:'Roboto', sans-serif;
-  background:#fff3c2;
-  color:#5a1a1a;
+  margin:0;                         /* quita espacios del navegador */
+  font-family:'Roboto', sans-serif; /* tipo de letra */
+  background:#f3e3a3;               /* fondo crema */
 }
 
-/* ===== HEADER ===== */
+/* contenedor central */
+.container{
+  width:95%;
+  max-width:1100px;
+  margin:8px auto;                  /* centra el contenido */
+}
+
+
+/* =====================================================
+   🔴 HEADER (parte roja de arriba)
+===================================================== */
 header{
-  background:#8B0000;
-  padding:5px 0;
-  border-radius:0 0 15px 15px;
+  background:#8B0000;               /* rojo */
+  padding:8px 15px;                /* altura del header */
+  border-radius:0 0 20px 20px;     /* bordes abajo redondeados */
+  position:relative;               /* necesario para centrar menú */
 }
 
-.menu-title{
-  position: absolute;
-  left: 50%;
-  color:#f3c75f;
-  font-size:40px;
-  margin:0;
-  font-weight:bold;
-}
-
+/* acomoda logo y botones */
 header .container{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  flex-wrap:wrap;
 }
-/* ===== NAV ===== */
+
+/* LOGO */
+.photo img{
+  width:85px;                      /* tamaño del logo */
+}
+
+/* =====================================================
+   🟡 TITULO "MENÚ" (centrado)
+===================================================== */
+.menu-title{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);      /* centra perfecto */
+  color:#f3c75f;                  /* color dorado */
+  font-size:36px;                /* tamaño del texto */
+  margin:0;
+  font-weight:bold;
+}
+
+
+/* =====================================================
+   🔘 BOTONES DERECHA (Sesión / SpeakEat)
+===================================================== */
+.Opciones{
+  display:flex;
+  flex-direction:column;          /* uno debajo del otro */
+  gap:5px;
+}
+
 .Opciones a{
-  background:#5a1a1a;
+  background:#4a1a1a;
   color:#fff;
-  padding:6px 10px;
+  padding:5px 8px;
   border-radius:8px;
   text-decoration:none;
-  margin-left:6px;
+  font-size:11px;
+  text-align:center;
+}
+
+
+/* =====================================================
+   🌐 IDIOMA (arriba derecha)
+===================================================== */
+.idioma-box{
+  position:absolute;
+  right:20px;                     /* lo manda a la derecha */
+  top:10px;                       /* altura */
+  color:white;
   font-size:13px;
 }
 
-.Opciones a:hover{
-  background:#6a1523;
-}
-
-
-/* ===== SELECT ===== */
-select{
-  padding:4px;
+.idioma-box select{
+  margin-left:5px;
+  padding:3px;
   border-radius:5px;
   border:none;
 }
 
-/* ===== PLATILLOS ===== */
-.title{
+
+/* =====================================================
+   🟢 FILTROS
+===================================================== */
+#section-filters{
+  background:#e6d8a5;
+  padding:8px;
+  border-radius:20px;
+  margin:8px auto;
+}
+
+#section-filters span{
+  font-size:14px;
+}
+
+#section-filters button{
+  border:none;
+  border-radius:20px;
+  padding:5px 12px;
+  font-size:12px;
+  margin-right:5px;
+  cursor:pointer;
+}
+
+/* colores de botones */
+.activo{ background:#5bc75b; color:white; }
+.popular{ background:#d63b3b; color:white; }
+.oferta{ background:#1fa64a; color:white; }
+
+
+/* =====================================================
+   📂 CATEGORÍAS
+===================================================== */
+#section-category{
+  background:#eee0b8;
+  padding:8px;
+  border-radius:20px;
+  margin-bottom:10px;
   text-align:center;
-  font-size:24px;
+}
+
+#section-category button{
+  border:none;
+  background:transparent;
+  margin:0 10px;
+  font-size:13px;
+  cursor:pointer;
+}
+
+
+/* =====================================================
+   🧱 GRID (donde están los platillos)
+===================================================== */
+.container-platillos{
+  display:grid;
+  grid-template-columns:repeat(3,1fr); /* 3 columnas */
+  gap:15px;                            /* espacio entre tarjetas */
+}
+
+
+/* =====================================================
+   🍔 TARJETA DE COMIDA
+===================================================== */
+.platillo{
+  border-radius:20px;
+  overflow:hidden;
+}
+
+/* PARTE ROJA (arriba) */
+.img-platillo{
+  background:#a00000;
+  height:140px;
+  border-radius:20px 20px 0 0;
+  position:relative;
+}
+
+/* ETIQUETA (arriba derecha) */
+.img-platillo::after{
+  content:"ETIQUETA";
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:#ff5c5c;
+  color:white;
+  font-size:10px;
+  padding:4px 8px;
+  border-radius:10px;
+}
+
+/* PARTE GRIS (abajo) */
+.description{
+  background:#e6e6e6;
+  padding:12px;
+  border-radius:0 0 20px 20px;
+  text-align:center;
+}
+
+/* TITULO DEL PLATILLO */
+.description h4{
+  font-size:18px;
   margin:5px 0;
 }
 
-.container-platillos{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:12px;
+/* DESCRIPCIÓN */
+.description p{
+  font-size:14px;
+  margin:6px 0;
 }
 
-/* tarjeta */
-.platillo{
-  background:white;
-  border-radius:15px;
-  overflow:hidden;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
-  transition:0.2s;
-}
-
-.platillo:hover{
-  transform:scale(1.02);
-}
-
-/* imagen */
-.img-platillo img{
-  border-radius:8px;
-}
-
-
-/* botón */
+/* LINK */
 .btn-detalles{
   display:inline-block;
-  margin-top:4px;
-  padding:5px 8px;
-  background:#8B0000;
-  color:#fff3c2;
-  text-decoration:none;
-  border-radius:6px;
-  font-size:11px;
+  margin-top:5px;
+  font-size:13px;
+  color:#6a00a3;
 }
 
-.btn-detalles:hover{
-  background:#a3152a;
-}
 
-/* ===== FOOTER ===== */
+/* =====================================================
+   🔻 FOOTER (parte de abajo)
+===================================================== */
 footer{
   background:#8B0000;
-  color:#fff3c2;
+  border-radius:20px 20px 0 0;
+  padding:25px;
+  margin-top:15px;
   text-align:center;
-  padding:50px;
-  margin-top:90px;
+  color:black;
   font-size:12px;
 }
