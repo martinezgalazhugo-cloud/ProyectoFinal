@@ -382,3 +382,310 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+
+
+/* Variables globales de color y diseño */
+:root {
+    --bg: #f4f7fb;
+    --surface: #ffffff;
+    --surface-alt: #eef3f8;
+    --text: #102a43;
+    --text-muted: #475569;
+    --primary: #0f4c75;
+    --primary-soft: #3282b8;
+    --accent: #ffcb05;
+    --success: #38b000;
+    --danger: #ef233c;
+    --radius: 20px;
+    --shadow: 0 16px 45px rgba(16, 42, 67, 0.12);
+}
+
+/* Reset básico y modelo de caja */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Comportamiento de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tipografía y fondo global */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Imágenes adaptables */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Botones heredan fuente y tienen cursor pointer */
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Contenedor centralizado con ancho máximo */
+.container {
+    width: min(1120px, 100% - 2rem);
+    margin: 0 auto;
+}
+
+/* Encabezado con degradado */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+    color: #fff;
+}
+
+/* Espacio interior del header */
+header section {
+    padding: 1.75rem 0;
+}
+
+/* Layout flexible para contenido dentro del header */
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Estilo de logo circular */
+.photo img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Texto del título en el header */
+.container-text {
+    flex: 1;
+    min-width: 160px;
+    text-align: center;
+}
+
+.menu-title {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: 0.18em;
+}
+
+/* Navegación principal */
+nav.Opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+nav.Opciones a {
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+    transition: background 0.2s ease;
+}
+
+nav.Opciones a:hover {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+/* Selector de idioma en el header */
+label, select {
+    color: #fff;
+}
+
+select {
+    margin-left: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    min-width: 180px;
+}
+
+/* Sección de filtros del header */
+#section-filters {
+    background: rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+#section-filters .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+}
+
+#section-filters span {
+    font-weight: 700;
+}
+
+/* Estilo general de botones */
+button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1.1rem;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button.activo {
+    background: var(--accent);
+    color: var(--text);
+}
+
+button.popular {
+    background: var(--success);
+    color: #fff;
+}
+
+button.oferta {
+    background: var(--danger);
+    color: #fff;
+}
+
+/* Espacio vertical de main */
+main {
+    padding: 2rem 0 3rem;
+}
+
+/* Contenedor de categorías */
+#section-category .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    background: var(--surface);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+#section-category span {
+    font-weight: 700;
+}
+
+#section-category button {
+    background: var(--surface-alt);
+    color: var(--text);
+}
+
+#section-category button:hover {
+    background: #dbe7f2;
+}
+
+/* Título de la sección de platillos */
+#section-platillos .title {
+    margin-bottom: 1rem;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+/* Grid de tarjetas de platillos */
+.container-platillos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+/* Tarjeta individual de platillo */
+.platillo {
+    background: var(--surface);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen del platillo */
+.img-platillo {
+    min-height: 180px;
+    overflow: hidden;
+}
+
+.img-platillo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Descripción dentro de cada tarjeta */
+.description {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.description h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.description p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+/* Botón de detalles */
+.btn-detalles {
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    background: var(--primary);
+    color: #fff;
+}
+
+.btn-detalles:hover {
+    background: var(--primary-soft);
+}
+
+/* Pie de página */
+footer {
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #5a6b7c;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    header .container,
+    #section-filters .container,
+    #section-category .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav.Opciones {
+        justify-content: flex-start;
+    }
+
+    .container-text {
+        text-align: left;
+    }
+}

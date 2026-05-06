@@ -1,0 +1,25 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI', Arial;
+  display:flex;
+  height:100vh;
+  background:#fff3c2;
+}
+
+/* ===== Encabezado ===== */
+
+.header{
+  width:100%;
+  background:#8B0000;
+  color:#fff;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
