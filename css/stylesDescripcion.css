@@ -1,0 +1,110 @@
+/* hace que la página use toda la pantalla */
+html, body{
+  min-height:100%;
+}
+
+/* cuerpo principal */
+body{
+  margin:0;
+  font-family:'Roboto', sans-serif;
+  background:#f3e3a3;
+  color:#4a1a1a;
+
+  /* acomoda el footer abajo */
+  display:flex;
+  flex-direction:column;
+}
+
+header{
+  background:#8B0000;
+  padding:15px;
+  text-align:center;
+  border-radius:0 0 20px 20px;
+}
+
+header h1{
+  margin:0;
+  color:#f3c75f;
+  font-size:38px;
+}
+
+/* esto empuja el footer hacia abajo */
+main{
+  flex:1;
+
+  width:90%;
+  max-width:1000px;
+  margin:30px auto;
+}
+
+/* tarjeta principal */
+section{
+  background:white;
+  border-radius:20px;
+  padding:25px;
+  display:flex;
+  gap:30px;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+img{
+  width:300px;
+  height:300px;
+  border-radius:20px;
+  object-fit:cover;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* texto debajo de imagen */
+section div p:first-of-type{
+  text-align:center;
+  margin-top:10px;
+  font-size:14px;
+}
+
+h3{
+  color:#8B0000;
+  font-size:28px;
+  margin-top:0;
+}
+
+section div:last-child p{
+  font-size:18px;
+  line-height:1.6;
+}
+
+.precio{
+  background:#8B0000;
+  color:#f3c75f;
+  display:inline-block;
+  padding:8px 15px;
+  border-radius:12px;
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+footer{
+  background:#8B0000;
+  padding:20px;
+  text-align:center;
+  border-radius:20px 20px 0 0;
+  margin-top:120px;
+}
+
+/* link volver */
+footer a{
+  color:#f3c75f;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer a:hover{
+  text-decoration:underline;
+}
+
+footer p{
+  color:white;
+  margin-top:10px;
+  font-size:13px;
+}
