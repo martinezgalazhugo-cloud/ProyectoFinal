@@ -131,6 +131,7 @@ header .container{
 .activo{ background:#5bc75b; color:white; }
 .popular{ background:#d63b3b; color:white; }
 .oferta{ background:#1fa64a; color:white; }
+.nuevo{ background:#ff9800; color:white; }
 
 
 /* =====================================================
@@ -179,17 +180,38 @@ header .container{
   position:relative;
 }
 
-/* ETIQUETA (arriba derecha) */
-.img-platillo::after{
-  content:"ETIQUETA";
+/* =====================================================
+   🏷️ ETIQUETAS
+===================================================== */
+
+.etiqueta{
   position:absolute;
   top:10px;
   right:10px;
-  background:#ff5c5c;
+
+  padding:5px 12px;
+  border-radius:12px;
+
   color:white;
-  font-size:10px;
-  padding:4px 8px;
-  border-radius:10px;
+  font-size:11px;
+  font-weight:bold;
+
+  text-transform:uppercase;
+}
+
+/* POPULAR */
+.popular{
+  background:#d63b3b;
+}
+
+/* OFERTA */
+.oferta{
+  background:#1fa64a;
+}
+
+/* NUEVO */
+.nuevo{
+  background:#ff9800;
 }
 
 /* PARTE GRIS (abajo) */
