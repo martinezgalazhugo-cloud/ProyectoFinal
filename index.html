@@ -9,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Lobster&display=swap" rel="stylesheet">
 
     <!-- Hoja de estilos -->
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/stylesMENU.css">
      <link rel="stylesheet" href="icons/fontawesome-free-7.2.0-web/fontawesome-free-7.2.0-web/css/all.min.css">
-     <!-- <link rel="stylesheet" href="/Portafolio_V1/css/styles_temp.css"> -->
-
+ 
      <!-- Scripts -->
       <script src="js/modernizr-custom.js"></script>
+      <script src="js/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
 
     <title>Nuestro proyecto final</title>
 </head>
@@ -38,7 +40,7 @@
                     <a href="html/IniciarSesion.html">Sesión</a>
                     <a href="html/SPEAKEAT.html">SPEAKEAT</a>
                 </nav>
-                <label class="label-idioma" for="idioma">Idioma:</label>
+                <label class="label-idioma">Idioma:</label>
                 <select name="idioma" id="idioma">
                     <option value="es">ESPAÑOL</option>
                     <option value="en">INGLÉS</option>
@@ -51,15 +53,16 @@
         <section id="section-filters">
             <div class="container-filters">
                 <span>Filtros:</span>
-                    <button type="button" class="activo">Todos</button>
-                    <button type="button" class="popular">Popular</button>
-                    <button type="button" class="oferta">Oferta</button>
-                    <button type="button" class="nuevo">Nuevo</button>
+                    <button type="button" class="activo" data-filter="Todos">Todos</button>
+                    <button type="button" class="popular" data-filter="Popular">Popular</button>
+                    <button type="button" class="oferta" data-filter="Oferta">Oferta</button>
+                    <button type="button" class="nuevo" data-filter="Nuevo">Nuevo</button>
             </div>
         </section>
     </header>
 
     <main>
+        <!-- 
         <section id="section-category">
             <div class="container">
                 <span>Categorías:</span>
@@ -69,89 +72,150 @@
                     <button type="button" class="bebidas">Bebidas</button>
             </div>
         </section>
+        -->
 
         <section id="section-platillos">
-                <div class="container">
-                    <h2 class="title">Platillos</h2>
-                    <div class="container-platillos">
-                       <div class="platillo filtro-popular">
-                            <div class="img-platillo">
-                                <span class="etiqueta popular">Popular</span>
-                                <img src="img/Cheesy-Chicken-Enchiladas-1200-x-1200.jpg" alt="Enchiladas" height="180px" width="360px">
-                            </div>
-                            <div class="description">
-                                <h4>Enchiladas</h4>
-                                <p>Platillo Mexicano</p>
-                                 <div class="precio">$120 MXN</div>
-                                <a href="html/descripcion1.html" class="btn-detalles">Ver detalles</a>
-                            </div>
-                        </div>
-                        <div class="platillo Oferta">
-                            <div class="img-platillo">
-                                <span class="etiqueta oferta">Oferta</span>
-                                <img src="img/Tamales.jpg" alt="Tamales" height="180px" width="360px">
-                            </div>
-                            <div class="description">
-                                <h4>Tamales</h4>
-                                <p>Platillo Mexicano</p>
-                                 <div class="precio">$95 MXN</div>
-                                <a href="html/descripcion2.html" class="btn-detalles">Ver detalles</a>
-                            </div>
-                        </div>
-                        <div class="platillo Oferta">
-                            <div class="img-platillo">
-                                <span class="etiqueta oferta">Oferta</span>
-                                <img src="img/sushi-8113165_1280.jpg" alt="Sushi" height="180px" width="360px">
-                            </div>
-                            <div class="description">
-                                <h4>Sushi</h4>
-                                <p>Platillo Japonés</p>
-                                <div class="precio">$180 MXN</div>
-                                <a href="html/descripcion3.html" class="btn-detalles">Ver detalles</a>
-                            </div>
-                        </div>
-                        <div class="platillo Oferta">
-                            <div class="img-platillo">
-                                <span class="etiqueta oferta">Oferta</span>
-                                <img src="img/Pizza.jpg" alt="Pizza" height="180px" width="360px">
-                            </div>
-                            <div class="description">
-                                <h4>Pizza</h4>
-                                <p>Platillo Italiano</p>
-                                <div class="precio">$180 MXN</div>
-                                <a href="html/descripcion4.html" class="btn-detalles">Ver detalles</a>
-                            </div>
-                        </div>
-                        <div class="platillo Oferta">
-                            <div class="img-platillo">
-                                <span class="etiqueta oferta">Oferta</span>
-                                <img src="img/Tarta.jpg" alt="Tarta" height="180px" width="360px">
-                            </div>
-                            <div class="description">
-                                <h4>Tarta</h4>
-                                <p>Platillo Español</p>
-                                <div class="precio">$180 MXN</div>
-                                <a href="html/descripcion5.html" class="btn-detalles">Ver detalles</a>
-                            </div>
-                        </div>
-                        <div class="platillo Popular">
-                            <div class="img-platillo">
-                                <span class="etiqueta popular">Popular</span>
-                                <img src="img/AguaCiel.jpg" alt="Agua" height="180px" width="360px">
-                            </div>
-                            <div class="description">
-                                <h4>Agua</h4>
-                                <p>Bebida refrescante</p>
-                                <div class="precio">$180 MXN</div>
-                                <a href="html/descripcion6.html" class="btn-detalles">Ver detalles</a>
-                            </div>
-                        </div>
 
-                        <!-- Agrega más platillos aquí -->
-                    </div>
+    <div class="container">
+
+        <!-- =====================================
+             🍔 PLATILLOS
+        ====================================== -->
+        <h2 class="title">PLATILLOS</h2>
+
+        <div class="container-platillos">
+
+            <!-- ENCHILADAS -->
+            <div class="platillo filtro-popular">
+                <div class="img-platillo">
+                    <span class="etiqueta popular">Popular</span>
+                    <img src="img/Cheesy-Chicken-Enchiladas-1200-x-1200.jpg" alt="Enchiladas" height="180px" width="360px">
                 </div>
-        </section>
 
+                <div class="description">
+                    <h4>Enchiladas</h4>
+                    <p>Platillo Mexicano</p>
+                    <div class="precio">$120 MXN</div>
+
+                    <a href="html/descripcion1.html" class="btn-detalles">
+                        Ver detalles
+                    </a>
+                </div>
+            </div>
+
+            <!-- TAMALES -->
+            <div class="platillo filtro-oferta">
+                <div class="img-platillo">
+                    <span class="etiqueta oferta">Oferta</span>
+                    <img src="img/Tamales.jpg" alt="Tamales" height="180px" width="360px">
+                </div>
+
+                <div class="description">
+                    <h4>Tamales</h4>
+                    <p>Platillo Mexicano</p>
+                    <div class="precio">$95 MXN</div>
+
+                    <a href="html/descripcion2.html" class="btn-detalles">
+                        Ver detalles
+                    </a>
+                </div>
+            </div>
+
+            <!-- SUSHI -->
+            <div class="platillo filtro-oferta">
+                <div class="img-platillo">
+                    <span class="etiqueta oferta">Oferta</span>
+                    <img src="img/sushi-8113165_1280.jpg" alt="Sushi" height="180px" width="360px">
+                </div>
+
+                <div class="description">
+                    <h4>Sushi</h4>
+                    <p>Platillo Japonés</p>
+                    <div class="precio">$180 MXN</div>
+
+                    <a href="html/descripcion3.html" class="btn-detalles">
+                        Ver detalles
+                    </a>
+                </div>
+            </div>
+
+            <!-- PIZZA -->
+            <div class="platillo filtro-oferta">
+                <div class="img-platillo">
+                    <span class="etiqueta oferta">Oferta</span>
+                    <img src="img/Pizza.jpg" alt="Pizza" height="180px" width="360px">
+                </div>
+
+                <div class="description">
+                    <h4>Pizza</h4>
+                    <p>Platillo Italiano</p>
+                    <div class="precio">$180 MXN</div>
+
+                    <a href="html/descripcion4.html" class="btn-detalles">
+                        Ver detalles
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             🍰 POSTRES
+        ====================================== -->
+        <h2 class="title">POSTRES</h2>
+
+        <div class="container-platillos">
+
+            <div class="platillo filtro-oferta">
+                <div class="img-platillo">
+                    <span class="etiqueta oferta">Oferta</span>
+                    <img src="img/Tarta.jpg" alt="Tarta" height="180px" width="360px">
+                </div>
+
+                <div class="description">
+                    <h4>Tarta</h4>
+                    <p>Platillo Español</p>
+                    <div class="precio">$180 MXN</div>
+
+                    <a href="html/descripcion5.html" class="btn-detalles">
+                        Ver detalles
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             🥤 BEBIDAS
+        ====================================== -->
+        <h2 class="title">BEBIDAS</h2>
+
+        <div class="container-platillos">
+
+            <div class="platillo filtro-nuevo">
+                <div class="img-platillo">
+                    <span class="etiqueta nuevo">Nuevo</span>
+                    <img src="img/AguaCiel.jpg" alt="Agua" height="180px" width="360px">
+                </div>
+
+                <div class="description">
+                    <h4>Agua</h4>
+                    <p>Bebida refrescante</p>
+                    <div class="precio">$180 MXN</div>
+
+                    <a href="html/descripcion6.html" class="btn-detalles">
+                        Ver detalles
+                    </a>
+                </div>
+            </div>
+<!--Mas platillos -->
+        </div>
+
+    </div>
+
+</section>
     </main>
 
     <footer>

@@ -1,110 +1,253 @@
-/* hace que la página use toda la pantalla */
+/* =========================================
+   🌍 PÁGINA GENERAL
+========================================= */
+
 html, body{
   min-height:100%;
 }
 
-/* cuerpo principal */
 body{
   margin:0;
   font-family:'Roboto', sans-serif;
-  background:#f3e3a3;
-  color:#4a1a1a;
 
-  /* acomoda el footer abajo */
+  /* colores suaves */
+  background:#f5f3ef;
+  color:#3d2f2f;
+
   display:flex;
   flex-direction:column;
 }
 
+
+/* =========================================
+   🔴 HEADER
+========================================= */
+
 header{
-  background:#8B0000;
-  padding:15px;
+  background:#5c4033;
+  padding:18px;
   text-align:center;
-  border-radius:0 0 20px 20px;
+  border-radius:0 0 25px 25px;
+
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 header h1{
   margin:0;
-  color:#f3c75f;
-  font-size:38px;
+
+  color:#f7d9a0;
+
+  font-size:42px;
+
+  font-family:'Lobster', cursive;
+  letter-spacing:2px;
 }
 
-/* esto empuja el footer hacia abajo */
+
+/* =========================================
+   📦 MAIN
+========================================= */
+
 main{
   flex:1;
 
   width:90%;
   max-width:1000px;
-  margin:30px auto;
+
+  margin:40px auto;
 }
 
-/* tarjeta principal */
+
+/* =========================================
+   🍽️ TARJETA PRINCIPAL
+========================================= */
+
 section{
-  background:white;
-  border-radius:20px;
-  padding:25px;
+  background:#ffffff;
+
+  border-radius:25px;
+
+  padding:35px;
+
   display:flex;
-  gap:30px;
+  gap:35px;
+
   align-items:center;
-  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
+
+
+/* =========================================
+   🖼️ IMAGEN
+========================================= */
 
 img{
-  width:300px;
-  height:300px;
+  width:320px;
+  height:320px;
+
   border-radius:20px;
+
   object-fit:cover;
-  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
 }
 
-/* texto debajo de imagen */
+
+/* texto debajo imagen */
 section div p:first-of-type{
   text-align:center;
-  margin-top:10px;
+
+  margin-top:12px;
+
   font-size:14px;
+
+  color:#777;
 }
 
+
+/* =========================================
+   📝 TITULOS
+========================================= */
+
 h3{
-  color:#8B0000;
-  font-size:28px;
+  color:#5c4033;
+
+  font-size:34px;
+
   margin-top:0;
+
+  margin-bottom:15px;
+
+  font-family:'Lobster', cursive;
+
+  letter-spacing:1px;
 }
+
+
+/* =========================================
+   📄 DESCRIPCIÓN
+========================================= */
 
 section div:last-child p{
   font-size:18px;
-  line-height:1.6;
+
+  line-height:1.8;
+
+  color:#555;
 }
+
+
+/* =========================================
+   💲 PRECIO
+========================================= */
 
 .precio{
-  background:#8B0000;
-  color:#f3c75f;
+  background:#8a5a44;
+
+  color:#ffffff;
+
   display:inline-block;
-  padding:8px 15px;
-  border-radius:12px;
-  font-size:20px;
-  margin-bottom:20px;
+
+  padding:10px 18px;
+
+  border-radius:14px;
+
+  font-size:22px;
+
+  font-weight:bold;
+
+  margin-bottom:25px;
+
+  box-shadow:0 3px 8px rgba(0,0,0,0.10);
 }
+
+
+/* =========================================
+   🔻 FOOTER
+========================================= */
 
 footer{
-  background:#8B0000;
-  padding:20px;
+  background:#5c4033;
+
+  padding:22px;
+
   text-align:center;
-  border-radius:20px 20px 0 0;
-  margin-top:120px;
+
+  border-radius:25px 25px 0 0;
+
+  margin-top:80px;
 }
 
-/* link volver */
+
+/* =========================================
+   🔗 LINK VOLVER
+========================================= */
+
 footer a{
-  color:#f3c75f;
+  color:#f7d9a0;
+
   text-decoration:none;
+
   font-weight:bold;
+
+  font-size:15px;
+
+  transition:0.2s;
 }
 
 footer a:hover{
-  text-decoration:underline;
+  color:white;
 }
 
+
+/* =========================================
+   📌 COPYRIGHT
+========================================= */
+
 footer p{
-  color:white;
-  margin-top:10px;
+  color:#f5f3ef;
+
+  margin-top:12px;
+
   font-size:13px;
+}
+
+/* =========================================
+   📱 RESPONSIVE
+========================================= */
+
+@media screen and (max-width:800px){
+
+  main{
+    width:95%;
+    margin:20px auto;
+  }
+
+  section{
+    flex-direction:column;
+    text-align:center;
+
+    padding:20px;
+    gap:20px;
+  }
+
+  img{
+    width:100%;
+    max-width:280px;
+    height:auto;
+  }
+
+  h3{
+    font-size:28px;
+  }
+
+  section div:last-child p{
+    font-size:16px;
+    line-height:1.5;
+  }
+
+  .precio{
+    font-size:18px;
+  }
 }
