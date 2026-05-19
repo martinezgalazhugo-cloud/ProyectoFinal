@@ -354,6 +354,10 @@ footer{
   .container-platillos{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .menu-title{
+    font-size: 40%;
+  }
 }
 
 @media screen and (max-width: 500px){
