@@ -4,9 +4,13 @@
 body{
   margin:0;
   font-family:'Roboto', sans-serif;
-  background:#f5f3ef; /* fondo crema suave */
+  background:#f3e3a3; /* crema */
 }
 
+html, body{
+  min-height:100%;
+  overflow-x:hidden;
+}
 /* contenedor central */
 .container{
   width:95%;
@@ -19,7 +23,7 @@ body{
    🔴 HEADER
 ===================================================== */
 header{
-  background:#5c4033; /* café elegante */
+  background:#8B0000; /* rojo */
   padding:8px 15px;
   border-radius:0 0 20px 20px;
   position:relative;
@@ -48,7 +52,7 @@ header .container{
 
   font-family:'Lobster', cursive;
 
-  color:#f7d9a0;
+  color:#f3c75f;
   font-size:52px;
   margin:0;
   font-weight:normal;
@@ -67,7 +71,7 @@ header .container{
 }
 
 .Opciones a{
-  background:#7a5c4d; /* café claro */
+  background:#4a1a1a;
   color:#fff;
   padding:5px 8px;
   border-radius:8px;
@@ -75,7 +79,6 @@ header .container{
   font-size:11px;
   text-align:center;
 }
-
 
 /* =====================================================
    🌐 IDIOMA
@@ -99,14 +102,13 @@ header .container{
   font-size:13px;
   color:#f7d9a0;
   margin-left:900px; 
-}
-
+} 
 
 /* =====================================================
    🟢 FILTROS
 ===================================================== */
 #section-filters{
-  background:#ebe5dc;
+  background:#f3e3a3;
   padding:8px;
   border-radius:20px;
   margin:8px auto;
@@ -133,22 +135,22 @@ header .container{
 
 /* colores de botones */
 .activo{
-  background:#8c6a43;
+  background:#5bc75b;
   color:white;
 }
 
 .popular{
-  background:#b85c38;
+  background:#d63b3b;
   color:white;
 }
 
 .oferta{
-  background:#5f8b4c;
+  background:#1fa64a;
   color:white;
 }
 
 .nuevo{
-  background:#d19a3c;
+  background:#ff9800;
   color:white;
 }
 
@@ -157,7 +159,7 @@ header .container{
    📂 CATEGORÍAS
 ===================================================== */
 #section-category{
-  background:#e8e1d5;
+  background:#eee0b8;
   padding:8px;
   border-radius:20px;
   margin-bottom:10px;
@@ -180,7 +182,7 @@ header .container{
   text-align:center;
   font-size:35px;
   margin:35px 0 20px;
-  color:#5c4033;
+  color:#8B0000;
   font-family:'Lobster', cursive;
   letter-spacing:2px;
 }
@@ -190,8 +192,9 @@ header .container{
 ===================================================== */
 .container-platillos{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,320px));
+  gap:20px;
+  justify-content:center;
 }
 
 
@@ -201,14 +204,24 @@ header .container{
 .platillo{
   border-radius:20px;
   overflow:hidden;
+  background:white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.10);
 }
 
 /* PARTE SUPERIOR */
-.img-platillo{
-  background:#8a5a44; /* café rojizo */
-  height:180px;
-  border-radius:20px 20px 0 0;
+/* contenedor de la imagen */
+
+.img-platillo{ 
   position:relative;
+  height:180px;
+  overflow:hidden;
+}
+
+.img-platillo img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
 }
 
 
@@ -232,18 +245,16 @@ header .container{
 }
 
 /* POPULAR */
-.popular{
-  background:#b85c38;
+.etiqueta.popular{
+  background:#d63b3b;
 }
 
-/* OFERTA */
-.oferta{
-  background:#5f8b4c;
+.etiqueta.oferta{
+  background:#1fa64a;
 }
 
-/* NUEVO */
-.nuevo{
-  background:#d19a3c;
+.etiqueta.nuevo{
+  background:#ff9800;
 }
 
 
@@ -251,7 +262,7 @@ header .container{
    📄 DESCRIPCIÓN
 ===================================================== */
 .description{
-  background:#ffffff;
+  background:#e6e6e6;
   padding:12px;
   border-radius:0 0 20px 20px;
   text-align:center;
@@ -261,7 +272,7 @@ header .container{
 .description h4{
   font-size:18px;
   margin:5px 0;
-  color:#4b3527;
+  color:#4a1a1a;
 }
 
 /* DESCRIPCIÓN */
@@ -278,7 +289,7 @@ header .container{
 .precio{
   font-size:18px;
   font-weight:bold;
-  color:#8a5a44;
+  color:#8B0000;
   margin-top:10px;
 }
 
@@ -290,7 +301,7 @@ header .container{
   display:inline-block;
   margin-top:12px;
   padding:8px 16px;
-  background:#5c4033;
+  background:#8B0000;
   color:white;
   text-decoration:none;
   border-radius:10px;
@@ -301,7 +312,7 @@ header .container{
 
 /* efecto al pasar el mouse */
 .btn-detalles:hover{
-  background:#7a5c4d;
+  background:#c40000;
   transform:scale(1.05);
 }
 
@@ -318,12 +329,12 @@ header .container{
    🔻 FOOTER
 ===================================================== */
 footer{
-  background:#5c4033;
+  background:#8B0000;
   border-radius:20px 20px 0 0;
   padding:25px;
   margin-top:15px;
   text-align:center;
-  color:#f5f3ef;
+  color:#f3e3a3;
   font-size:12px;
 }
 
@@ -332,55 +343,102 @@ footer{
    📱 RESPONSIVE
 ===================================================== */
 
+
 @media screen and (max-width: 800px){
 
   header .container{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:10px;
   }
 
+  /* título menú */
+  .menu-title{
+    position:static;
+    transform:none;
+    font-size:42px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  /* idioma */
+  .label-idioma{
+    margin-left:0;
+    display:block;
+    margin-top:10px;
+  }
+
+  #idioma{
+    margin-bottom:10px;
+  }
+
+  /* filtros */
   #section-filters .container-filters{
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap:wrap;
+    justify-content:center;
   }
 
   #section-filters .container-filters button{
-    width: 46%;
-    margin-bottom: 8px;
+    width:46%;
+    margin-bottom:8px;
   }
 
+  /* tarjetas */
   .container-platillos{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .menu-title{
-    font-size: 40%;
+    grid-template-columns:repeat(2,1fr);
   }
 }
 
 @media screen and (max-width: 500px){
 
   header .container{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  /* menú */
+  .menu-title{
+    position:static;
+    transform:none;
+    font-size:34px;
+    margin:10px 0;
+  }
+
+  /* idioma */
+  .label-idioma{
+    margin-left:0;
+    display:block;
+    margin-top:10px;
+  }
+
+  #idioma{
+    width:140px;
+    text-align:center;
+  }
+
+  /* filtros */
+  #section-filters .container-filters{
+    flex-direction:column;
+    align-items:center;
   }
 
   #section-filters .container-filters button{
-    width: 100%;
+    width:100%;
   }
 
+  /* platillos */
   .container-platillos{
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
   }
 
-  .menu-title{
-    font-size: 30px;
+  .platillo{
+    width:100%;
   }
 
-  .label-idioma{
-    margin-left: 0;
+  .img-platillo img{
+    width:100%;
+    height:auto;
   }
 }
