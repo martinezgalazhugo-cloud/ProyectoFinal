@@ -38,7 +38,8 @@ header .container{
 
 /* LOGO */
 .photo img{
-  width:85px;
+  width: 180px;
+  height: auto;
 }
 
 

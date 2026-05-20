@@ -58,7 +58,7 @@ i18next.init({
 
                 imgdescripcionPostre: "Postre.",
 
-                imgdescripcionBebida: "Bebida refrescante.",    
+                imgdescripcionBebida: "Bebida refrescante.",
 
                 descripcion: "Descripción",
 
@@ -67,14 +67,67 @@ i18next.init({
                 volver_menu: "⬅ Volver al menú",
 
                 descripcion_platillo2: "Los tamales son un platillo mexicano tradicional, preparado con masa de maíz rellena de carne, queso o vegetales y envuelto en hojas de maíz para su cocción.",
-                
+
                 descripcion_platillo3: "El sushi es un platillo japonés tradicional preparado con arroz sazonado con vinagre, acompañado de pescado, mariscos o vegetales.",
 
                 descripcion_platillo4: "La pizza es un platillo tradicional italiano preparado con masa de pan, salsa de tomate y queso, acompañado de ingredientes variados.",
-                
+
                 descripcion_platillo5: "El pastel es un postre de chocolate, preparado con Chocolate.",
 
-                descripcion_platillo6: "El agua es una bebida refrescante preparada con agua mineral o embotellada."
+                descripcion_platillo6: "El agua es una bebida refrescante preparada con agua mineral o embotellada.",
+
+                // Traducciones para el menu de configuraciones.
+
+                tituloConfiguracion: "Configuracion de Sesión",
+
+                descripcionConfiguracion: "En esta sección, puedes configurar tus preferencias de sesión, como el idioma, la privacidad y las notificaciones.",
+
+                preferenciasSesion: "Preferencias de Sesión",
+
+                privacidad: "Privacidad:",
+
+                publico: "Público",
+
+                privado: "Privado",
+
+                notificaciones: "Notificaciones:",
+
+                habilitadas: "Habilitadas",
+
+                deshabilitadas: "Deshabilitadas",
+
+                guardarConfiguracion: "Guardar Configuracion",
+
+                comentarios: "Comentarios / Sugerencias",
+
+                mensaje: "Mensaje",
+
+                enviar: "Enviar",
+
+                //Inicio de sesion
+
+                iniciarSesion: "Iniciar sesión",
+
+                descripcionSesion: "Ingresa tus credenciales para continuar",
+
+                usuario: "Usuario",
+
+                contraseña: "Contraseña",
+
+                botonSesion: "Iniciar sesión",
+
+                pregunta: "¿No tienes una cuenta?",
+
+                crearsesion: "Crear una cuenta",
+
+                regresar: "Regresar",
+
+                titulocrear: "Crear sesión",
+
+                confirmarcontraseña: "Confirmar contraseña",
+
+                botonCrear: "Crear sesión",
+
             }
         },
 
@@ -143,8 +196,53 @@ i18next.init({
 
                 descripcion_platillo6: "Water is a refreshing drink made with mineral or bottled water.",
 
-                volver_menu: "⬅ Come back to menu"
+                volver_menu: "⬅ Come back to menu",
 
+                // Traducciones para el menu de configuraciones.
+
+                tituloConfiguracion: "Session Settings",
+
+                descripcionConfiguracion:
+                    "In this section, you can configure your session preferences, such as language, privacy, and notifications.",
+
+                preferenciasSesion: "Session Preferences",
+
+                privacidad: "Privacy:",
+
+                publico: "Public",
+
+                privado: "Private",
+
+                notificaciones: "Notifications:",
+
+                habilitadas: "Enabled",
+
+                deshabilitadas: "Disabled",
+
+                guardarConfiguracion: "Save Settings",
+
+                comentarios: "Comments / Suggestions",
+
+                mensaje: "Message",
+
+                enviar: "Send",
+
+                //Inicio de sesion
+                iniciarSesion: "Log In",
+
+                descripcionSesion: "Enter your credentials to continue",
+
+                usuario: "Username",
+
+                contraseña: "Password",
+
+                botonSesion: "Log In",
+
+                pregunta: "Don't have an account?",
+
+                crearsesion: "Create an account",
+
+                regresar: "Go Back",
 
             }
         },
@@ -214,9 +312,55 @@ i18next.init({
                 descripcion_platillo4: "La pizza è un piatto tradizionale italiano preparato con pasta di pane, salsa di pomodoro e formaggio, accompagnato da ingredienti vari.",
                 descripcion_platillo5: "La torta è un dolce al cioccolato, preparato con cioccolato.",
 
-                descripcion_platillo6: "L'acqua è una bevanda rinfrescante preparata con acqua minerale o in bottiglia."
+                descripcion_platillo6: "L'acqua è una bevanda rinfrescante preparata con acqua minerale o in bottiglia.",
 
-            
+                // Traducciones para el menu de configuraciones.
+                tituloConfiguracion: "Configurazione della Sessione",
+
+                descripcionConfiguracion:
+                    "In questa sezione puoi configurare le preferenze della sessione, come lingua, privacy e notifiche.",
+
+                preferenciasSesion: "Preferenze della Sessione",
+
+                privacidad: "Privacy:",
+
+                publico: "Pubblico",
+
+                privado: "Privato",
+
+                notificaciones: "Notifiche:",
+
+                habilitadas: "Abilitate",
+
+                deshabilitadas: "Disabilitate",
+
+                guardarConfiguracion: "Salva Configurazione",
+
+                comentarios: "Commenti / Suggerimenti",
+
+                mensaje: "Messaggio",
+
+                enviar: "Invia",
+
+                //Inicio de sesion
+
+                iniciarSesion: "Accedi",
+
+                descripcionSesion: "Inserisci le tue credenziali per continuare",
+
+                usuario: "Utente",
+
+                contraseña: "Password",
+
+                botonSesion: "Accedi",
+
+                pregunta: "Non hai un account?",
+
+                crearsesion: "Crea un account",
+
+                regresar: "Torna indietro",
+
+
             }
         },
 
@@ -286,26 +430,72 @@ i18next.init({
 
                 descripcion_platillo6: "水は、ミネラルウォーターやボトル入りの水を使用して作られる爽やかな飲み物です。",
 
-                volver_menu: "⬅ メニューに戻る"
+                volver_menu: "⬅ メニューに戻る",
+
+                // Traducciones para el menu de configuraciones.
+
+                tituloConfiguracion: "セッション設定",
+
+                descripcionConfiguracion:
+                    "このセクションでは、言語、プライバシー、通知などのセッション設定を構成できます。",
+
+                preferenciasSesion: "セッション設定",
+
+                privacidad: "プライバシー:",
+
+                publico: "公開",
+
+                privado: "非公開",
+
+                notificaciones: "通知:",
+
+                habilitadas: "有効",
+
+                deshabilitadas: "無効",
+
+                guardarConfiguracion: "設定を保存",
+
+                comentarios: "コメント / 提案",
+
+                mensaje: "メッセージ",
+
+                enviar: "送信",
+
+                //Inicio de sesion
+                iniciarSesion: "ログイン",
+
+                descripcionSesion: "続行するには認証情報を入力してください",
+
+                usuario: "ユーザー名",
+
+                contraseña: "パスワード",
+
+                botonSesion: "ログイン",
+
+                pregunta: "アカウントをお持ちではありませんか？",
+
+                crearsesion: "アカウントを作成",
+
+                regresar: "戻る",
 
 
             }
         }
     }
-},() => {
+}, () => {
 
     actualizarTextos();
 
     // Guardar el idioma seleccionado en localStorage
     const selectorIdioma = document.getElementById("idioma");
 
-    if(selectorIdioma){
+    if (selectorIdioma) {
         selectorIdioma.value = i18next.language;
     }
 });
 
 //funcion para actualizar los textos de la página según el idioma seleccionado
-function actualizarTextos(){
+function actualizarTextos() {
 
     document.querySelectorAll("[data-i18n]").forEach(elemento => {
 
@@ -318,14 +508,14 @@ function actualizarTextos(){
 //Selector del idioma 
 const selectorIdioma = document.getElementById("idioma");
 
-if(selectorIdioma){
+if (selectorIdioma) {
     selectorIdioma.addEventListener("change", () => {
 
-    const idioma = selectorIdioma.value;
+        const idioma = selectorIdioma.value;
         //guardar el idioma seleccionado en localStorage
-    localStorage.setItem("idioma", idioma);
+        localStorage.setItem("idioma", idioma);
 
-    i18next.changeLanguage(idioma, actualizarTextos);
-});
+        i18next.changeLanguage(idioma, actualizarTextos);
+    });
 }
 
