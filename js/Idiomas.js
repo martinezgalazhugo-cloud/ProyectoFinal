@@ -244,6 +244,12 @@ i18next.init({
 
                 regresar: "Go Back",
 
+                titulocrear: "Create Account",
+
+                confirmarcontraseña: "Confirm Password",
+
+                botonCrear: "Create Account",
+
             }
         },
 
@@ -360,6 +366,11 @@ i18next.init({
 
                 regresar: "Torna indietro",
 
+                titulocrear: "Crea Account",
+
+                confirmarcontraseña: "Conferma Password",
+
+                botonCrear: "Crea Account",
 
             }
         },
@@ -478,7 +489,11 @@ i18next.init({
 
                 regresar: "戻る",
 
+                titulocrear: "アカウント作成",
 
+                confirmarcontraseña: "パスワードを確認",
+
+                botonCrear: "アカウント作成",
             }
         }
     }
