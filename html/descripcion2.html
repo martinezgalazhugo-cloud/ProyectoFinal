@@ -2,9 +2,11 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/stylesDescripcion.css">
+
+    <script src="https://unpkg.com/i18next@23.10.1/dist/umd/i18next.min.js"></script>
 
     <title>Tamales</title>
 </head>
@@ -13,6 +15,14 @@
 
 <header>
     <h1>Tamales</h1>
+
+    <label class="label-idioma" data-i18n="idioma">Idioma:</label>
+        <select name="idioma" id="idioma">
+            <option value="es" data-i18n="español">ESPAÑOL</option>
+            <option value="en" data-i18n="inglés">INGLÉS</option>
+            <option value="it" data-i18n="italiano">ITALIANO</option>
+            <option value="ja" data-i18n="japonés">JAPONES</option>
+        </select>
 </header>
 
 <main>
@@ -21,18 +31,18 @@
         <div>
             <img src="../img/Tamales.jpg" alt="Tamales">
 
-            <p>
+            <p data-i18n="imgdescripcionMexicano">
                 Platillo tradicional mexicano.
             </p>
         </div>
 
         <div>
 
-            <h3>Descripción</h3>
+            <h3 data-i18n="descripcion">Descripción</h3>
 
             <h4 class="precio">$95 MXN</h4>
 
-            <p>
+            <p data-i18n="descripcion_platillo2">
                 Los tamales son un platillo mexicano tradicional,
                 preparado con masa de maíz rellena de carne,
                 queso o vegetales y envuelto en hojas de maíz
@@ -55,7 +65,7 @@
 <footer>
 
     <div>
-        <a href="../index.html">⬅ Volver al menú</a>
+        <a href="../index.html" data-i18n="volver_menu">⬅ Volver al menú</a>
 
         <p>
             Copyright © 2026 Triada.
@@ -65,6 +75,8 @@
 </footer>
 
 <script src="../js/audio.js"></script>
+
+<script src="../js/Idiomas.js"></script>
 
 </body>
 </html>  

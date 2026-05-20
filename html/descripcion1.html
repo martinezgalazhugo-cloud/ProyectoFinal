@@ -2,64 +2,77 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/stylesDescripcion.css">
+
+    <script src="https://unpkg.com/i18next@23.10.1/dist/umd/i18next.min.js"></script>
 
     <title>Enchiladas</title>
 </head>
 
 <body>
 
-<header>
-    <h1>Enchiladas</h1>
-</header>
+    <header>
+        <h1>Enchiladas</h1>
 
-<main>
-    <section>
+        <label class="label-idioma" data-i18n="idioma">Idioma:</label>
+        <select name="idioma" id="idioma">
+            <option value="es" data-i18n="español">ESPAÑOL</option>
+            <option value="en" data-i18n="inglés">INGLÉS</option>
+            <option value="it" data-i18n="italiano">ITALIANO</option>
+            <option value="ja" data-i18n="japonés">JAPONES</option>
+        </select>
+    </header>
 
+    <main>
+        <section>
+
+            <div>
+                <img src="../img/Cheesy-Chicken-Enchiladas-1200-x-1200.jpg" alt="Enchiladas">
+
+                <p data-i18n="imgdescripcionMexicano">
+                    Platillo tradicional mexicano.
+                </p>
+            </div>
+
+            <div>
+                <h3 data-i18n="descripcion">Descripción</h3>
+
+                <h4 class="precio">$120 MXN</h4>
+
+                <p data-i18n="descripcion_platillo1">
+                    Las enchiladas son un plato mexicano muy popular,
+                    consistente en tortillas de maíz rellenas de carne,
+                    queso o vegetales y cubiertas con salsa picante.
+                </p>
+
+                <button class="btn-audio"
+                    onclick="leerTexto('Las enchiladas contienen tortilla de maíz, carne, queso y salsa picante.')">
+
+                    🔊 Escuchar ingredientes
+
+                </button>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
         <div>
-            <img src="../img/Cheesy-Chicken-Enchiladas-1200-x-1200.jpg" alt="Enchiladas">
+            <a href="../index.html" data-i18n="volver_menu">⬅ Volver al menú</a>
 
             <p>
-                Platillo tradicional mexicano.
+                Copyright © 2026 Triada.
             </p>
         </div>
+    </footer>
 
-        <div>
-            <h3>Descripción</h3>
+    <script src="../js/audio.js"></script>
 
-            <h4 class="precio">$120 MXN</h4>
-
-            <p>
-                Las enchiladas son un plato mexicano muy popular,
-                consistente en tortillas de maíz rellenas de carne,
-                queso o vegetales y cubiertas con salsa picante.
-            </p>
-
-            <button class="btn-audio"
-            onclick="leerTexto('Las enchiladas contienen tortilla de maíz, carne, queso y salsa picante.')">
-
-                🔊 Escuchar ingredientes
-
-            </button>
-
-        </div>
-
-    </section>
-</main>
-
-<footer>
-    <div>
-        <a href="../index.html">⬅ Volver al menú</a>
-
-        <p>
-            Copyright © 2026 Triada.
-        </p>
-    </div>
-</footer>
-
-<script src="../js/audio.js"></script>
+    <script src="../js/Idiomas.js"></script>
 
 </body>
-</html> 
+
+</html>
