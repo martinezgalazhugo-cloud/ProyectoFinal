@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
       button.classList.add('activo');
 
       // Obtiene el texto del botón, lo limpia y lo convierte a minúsculas
-      const filtro = button.textContent.trim().toLowerCase();
+      //const filtro = button.textContent.trim().toLowerCase();
+      const filtro = button.getAttribute("data-filter").toLowerCase();
       // Aplica el filtro usando el texto obtenido
       applyFilter(filtro);
     });

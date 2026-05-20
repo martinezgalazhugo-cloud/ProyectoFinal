@@ -30,7 +30,20 @@ i18next.init({
                 postre_chocolate: "Postre de chocolate",
                 bebida_refrescante: "Bebida refrescante",
 
-                ver_detalles: "Ver detalles"
+                ver_detalles: "Ver detalles",
+
+                español: "ESPAÑOL",
+                inglés: "INGLÉS",
+                italiano: "ITALIANO",
+                japonés: "JAPONES",
+
+                idioma: "Idioma:",
+
+                filtros: "Filtros:",
+                todos: "Todos",
+                categorias: "Categorías:",
+
+
             }
         },
 
@@ -61,7 +74,20 @@ i18next.init({
                 postre_chocolate: "Chocolate dessert",
                 bebida_refrescante: "Refreshing drink",
 
-                ver_detalles: "View details"
+                ver_detalles: "View details",
+
+                español: "SPANISH",
+                inglés: "ENGLISH",
+                italiano: "ITALIAN",
+                japonés: "JAPANESE",
+
+                idioma: "Language:",
+
+                filtros: "Filters:",
+                todos: "All",
+                categorias: "Categories:",
+
+
             }
         },
 
@@ -92,7 +118,20 @@ i18next.init({
                 postre_chocolate: "Dessert al cioccolato",
                 bebida_refrescante: "Bevanda rinfrescante",
 
-                ver_detalles: "Vedi dettagli"
+                ver_detalles: "Vedi dettagli",
+
+                español: "SPAGNOLO",
+                inglés: "INGLESE",
+                italiano: "ITALIANO",
+                japonés: "GIAPPONESE",
+
+                idioma: "Lingua:",
+
+                filtros: "Filtri:",
+                todos: "Tutti",
+                categorias: "Categorie:",
+
+
             }
         },
 
@@ -123,7 +162,20 @@ i18next.init({
                 postre_chocolate: "チョコレートデザート",
                 bebida_refrescante: "爽やかな飲み物",
 
-                ver_detalles: "詳細を見る"
+                ver_detalles: "詳細を見る",
+
+                español: "スペイン語",
+                inglés: "英語",
+                italiano: "イタリア語",
+                japonés: "日本語",
+
+                idioma: "言語:",
+
+                filtros: "フィルター:",
+                todos: "すべて",
+                categorias: "カテゴリー:",
+
+
             }
         }
     }
